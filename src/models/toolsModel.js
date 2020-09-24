@@ -9,7 +9,7 @@ const schema = new Schema({
   description: String,
   tags: [
     {
-      type: String, // User email
+      type: String,
     },
   ],
 })

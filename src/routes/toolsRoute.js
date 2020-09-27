@@ -1,5 +1,5 @@
 import { Router } from 'express'
-import toolsController from '../controlers/toolsController'
+import toolsController from '../controllers/toolsController'
 
 const routes = new Router()
 const routeList = [

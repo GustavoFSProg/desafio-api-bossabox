@@ -6,7 +6,14 @@ import routeList from './routes/toolsRoute'
 
 dotenv.config()
 
-mongoose.connect(process.env.DATABASE_CONNECTION, {
+// mongoose.connect(process.env.DATABASE_CONNECTION, {
+//   useNewUrlParser: true,
+//   useUnifiedTopology: true,
+//   useCreateIndex: true,
+//   useFindAndModify: false,
+// })
+
+mongoose.connect(process.env.DATABASE_CONNECTION_TEST, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true,

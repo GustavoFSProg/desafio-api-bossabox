@@ -3,7 +3,7 @@ import { model, Schema } from 'mongoose'
 const schema = new Schema({
   title: {
     type: String,
-    // unique: true,
+    unique: true,
   },
   link: String,
   description: String,

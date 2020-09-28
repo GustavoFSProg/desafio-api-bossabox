@@ -30,4 +30,14 @@ async function getAll(req, res) {
   }
 }
 
-export default { create, getAll }
+async function login(req, res) {
+  try {
+    const data = await usersModel.findOne(req.body.email)
+
+    return res.status(200).send({ data })
+  } catch (error) {
+    return res.status(400).send({ error })
+  }
+}
+
+export default { create, getAll, login }

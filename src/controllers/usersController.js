@@ -1,7 +1,7 @@
 import dotenv from 'dotenv'
 import md5 from 'md5'
 import usersModel from '../models/usersModel'
-import generateToken from '../utils/auth'
+import generateToken from '../utils/config'
 
 dotenv.config()
 
@@ -12,7 +12,11 @@ async function create(req, res) {
       email: req.body.email,
       password: md5(req.body.password, process.env.GLOBAL_SALT_KEY),
     })
-    const token = await generateToken(req.body.email, req.body.password)
+  const data = { email: req.body.email,  password: req }
+    const { token } = await generateToken({
+      email: req.body.email,
+      pasword: req.body.password,
+    })
 
     return res.status(201).send({ msg: 'User created successfuly', token })
   } catch (error) {
@@ -32,9 +36,14 @@ async function getAll(req, res) {
 
 async function login(req, res) {
   try {
-    const data = await usersModel.findOne(req.body.email)
+    const data = await usersModel.findOne({
+      email: req.body.email,
+      password: md5(req.body.password, process.env.GLOBAL_SALT_KEY),
+    })
 
-    return res.status(200).send({ data })
+    const token = await generateToken(req.body.email, req.body.password)
+
+    return res.status(200).send({ data, token })
   } catch (error) {
     return res.status(400).send({ error })
   }

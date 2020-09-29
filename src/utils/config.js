@@ -1,4 +1,7 @@
 import jwt from 'jsonwebtoken'
+import dotenv from 'dotenv'
+
+dotenv.config()
 
 export async function decodeToken(token) {
   return jwt.decode(token, process.env.GLOBAL_SAL_KEY)

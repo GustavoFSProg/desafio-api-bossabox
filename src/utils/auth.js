@@ -1,4 +1,3 @@
-// import { verifyToken } from './config'
 import jwt from 'jsonwebtoken'
 
 export default async function isAuthorized(req, res, next) {

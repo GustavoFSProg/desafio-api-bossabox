@@ -8,14 +8,12 @@ dotenv.config()
 describe('Create Tools', () => {
   it('should create tools model', async () => {
     const string = Math.random().toString(36).substring(2, 15)
-    const response = await request(app)
-      .post('/tools')
-      .send({
-        title: string,
-        description: 'Desc',
-        link: 'http://localhost',
-        tags: ['target'],
-      })
+    const response = await request(app).post('/tools').send({
+      title: string,
+      description: 'Desc',
+      link: 'http://localhost',
+      tags: 'owner',
+    })
     expect(response.status).toBe(201)
   })
 })

@@ -14,10 +14,3 @@ export async function generateToken(data) {
 
   return token
 }
-
-export function verifyToken(token) {
-  return jwt.verify(token, process.env.GLOBAL_SAL_KEY, (error, decode) => {
-    if (error) return { error }
-    return { decode }
-  })
-}

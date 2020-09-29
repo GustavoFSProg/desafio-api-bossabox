@@ -2,6 +2,7 @@ import dotenv from 'dotenv'
 import md5 from 'md5'
 import usersModel from '../models/usersModel'
 import { generateToken } from '../utils/config'
+import send from '../utils/emailService'
 
 dotenv.config()
 
@@ -17,6 +18,8 @@ async function create(req, res) {
       email: req.body.email,
       password: md5(req.body.password, process.env.GLOBAL_SALT_KEY),
     })
+
+    await send(req, res)
 
     return res.status(201).send({ msg: 'User created successfuly', token })
   } catch (error) {

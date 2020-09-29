@@ -9,5 +9,6 @@ export default async function isAuthorized(req, res, next) {
   await jwt.verify(token, process.env.GLOBAL_SALT_KEY, function (error) {
     if (error) return res.status(401).send({ error: 'Invalid token' })
   })
+
   return next()
 }

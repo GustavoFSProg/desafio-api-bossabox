@@ -7,15 +7,7 @@ import routeList from './routes'
 dotenv.config()
 
 // DataBase de Produção
-// mongoose.connect(process.env.DATABASE_CONNECTION, {
-//   useNewUrlParser: true,
-//   useUnifiedTopology: true,
-//   useCreateIndex: true,
-//   useFindAndModify: false,
-// })
-
-// Database de testes
-mongoose.connect(process.env.DATABASE_CONNECTION_TEST, {
+mongoose.connect(process.env.DATABASE_CONNECTION, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true,

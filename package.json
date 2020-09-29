@@ -5,6 +5,9 @@
   "repository": "git@github.com:GustavoFSProg/desafio-api-bossabox.git",
   "author": "Gustavo <gustavosohne38@gmail.com>",
   "license": "MIT",
+  "engines": {
+    "node": "12.16.x"
+  },
   "scripts": {
     "dev": "NODE_ENV=development nodemon --exec babel-node src/index.js",
     "start": "NODE_ENV=production node dist",

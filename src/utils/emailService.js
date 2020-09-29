@@ -12,7 +12,7 @@ async function send(req) {
     text: 'Cadastro Api',
     html:
       `${'<strong>Olá '}${req.body.name}, ` +
-      ` Obrigado por se cadastrar no nosso site!</strong>`,
+      ` obrigado por se cadastrar no nosso site!</strong>`,
   }
   sendgrid.send(msg)
   return sendgrid

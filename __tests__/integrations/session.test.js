@@ -12,7 +12,7 @@ describe('Create Tools', () => {
       title: string,
       description: 'Desc',
       link: 'http://localhost',
-      tags: 'owner',
+      // tags: ['owner'],
     })
     expect(response.status).toBe(201)
   })

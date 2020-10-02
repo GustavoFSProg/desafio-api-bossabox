@@ -2565,6 +2565,13 @@ fb-watchman@^2.0.0:
   dependencies:
     bser "2.1.1"
 
+figures@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/figures/-/figures-3.2.0.tgz#625c18bd293c604dc4a8ddb2febf0c88341746af"
+  integrity sha512-yaduQFRKLXYOGgEn6AZau90j3ggSOyiqXU0F9JZfeXYhNa+Jk4X+s45A2zg5jns87GAFa34BBm2kXw4XpNcbdg==
+  dependencies:
+    escape-string-regexp "^1.0.5"
+
 file-entry-cache@^5.0.1:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/file-entry-cache/-/file-entry-cache-5.0.1.tgz#ca0f6efa6dd3d561333fb14515065c2fafdf439c"
@@ -5599,6 +5606,13 @@ supports-hyperlinks@^2.0.0:
   dependencies:
     has-flag "^4.0.0"
     supports-color "^7.0.0"
+
+swagger-autogen@^1.2.5:
+  version "1.2.5"
+  resolved "https://registry.yarnpkg.com/swagger-autogen/-/swagger-autogen-1.2.5.tgz#b2c46b137b80efdbf11623d03f2104a3e08abd30"
+  integrity sha512-RCiUKckiLUnE2dVIIlq+9Xvcdou1+knxb/MbSOJdmDKeWi+G9SzXaty6eO+uPVfZbQSgCb50Jd+P7UiRCxR7mw==
+  dependencies:
+    figures "^3.2.0"
 
 symbol-tree@^3.2.4:
   version "3.2.4"

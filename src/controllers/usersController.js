@@ -66,19 +66,4 @@ async function login(req, res) {
   }
 }
 
-// async function login(req, res) {
-//   try {
-//     const data = await usersModel.findOne({
-//       email: req.body.email,
-//       password: md5(req.body.password, process.env.GLOBAL_SALT_KEY),
-//     })
-
-//     const token = await generateToken(req.body.email, req.body.password)
-
-//     return res.status(200).send({ data, token })
-//   } catch (error) {
-//     return res.status(400).send({ error })
-//   }
-// }
-
 export default { create, getAll, login, deleteAll }

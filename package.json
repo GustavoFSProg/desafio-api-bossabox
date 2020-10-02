@@ -13,7 +13,8 @@
     "start": "NODE_ENV=production node dist",
     "build": "babel src -d dist",
     "lint": "eslint --ext .js --ignore-path .gitignore .",
-    "test": "jest"
+    "test": "jest",
+    "swagger": "node swagger.js"
   },
   "devDependencies": {
     "eslint": "^7.9.0",
@@ -38,6 +39,7 @@
     "jsonwebtoken": "^8.5.1",
     "md5": "^2.3.0",
     "mongoose": "^5.10.6",
-    "supertest": "^5.0.0"
+    "supertest": "^5.0.0",
+    "swagger-autogen": "^1.2.5"
   }
 }

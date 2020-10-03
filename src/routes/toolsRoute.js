@@ -7,7 +7,7 @@ const ToolsRouteList = [
   routes.get('/', toolsController.getAll),
   routes.delete('/tools/:id', isAuthorized, toolsController.deleteById),
   routes.get('/tools/:tags', isAuthorized, toolsController.getByTag),
-  routes.post('/tools', isAuthorized, toolsController.create),
+  routes.post('/tools', toolsController.create),
 ]
 
 export default ToolsRouteList

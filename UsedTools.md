@@ -10,7 +10,7 @@
 
 # 3- Jest
 
-É uma ferramenta para realizar testes unitarios e d eintegração
+É uma ferramenta para realizar testes unitarios e de integração
 em Node js
 
 # 4 - Swagger par documentação

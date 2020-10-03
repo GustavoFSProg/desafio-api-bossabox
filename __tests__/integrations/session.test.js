@@ -15,8 +15,7 @@ describe('Create Tools', () => {
         description: 'Desc',
         link: 'http://localhost',
         tags: ['owner'],
-        token:
-          'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjVmNzNhZjIwNDk1NTg3MmRmNDc4MzQzNiIsIm5hbWUiOiJHdXN0YXZvIiwiZW1haWwiOiJndXN0YXZvc29obmUzOEBnbWFpbC5jb20iLCJwYXNzd29yZCI6IjgxNzQzOWM5YzY1MzI5ODhlYTlhMTMyZDExYjY2ZjNlIiwiX192IjowfSwiaWF0IjoxNjAxNTAxMTEzLCJleHAiOjE2MDE1ODc1MTN9.FPOqvLuo76ZanvRAZJJbxNhnaalYY7f7aDEKhT4Yzkw',
+            'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjVmNzNhZjIwNDk1NTg3MmRmNDc4MzQzNiIsIm5hbWUiOiJHdXN0YXZvIiwiZW1haWwiOiJndXN0YXZvc29obmUzOEBnbWFpbC5jb20iLCJwYXNzd29yZCI6IjgxNzQzOWM5YzY1MzI5ODhlYTlhMTMyZDExYjY2ZjNlIiwiX192IjowfSwiaWF0IjoxNjAxNTAxMTEzLCJleHAiOjE2MDE1ODc1MTN9.FPOqvLuo76ZanvRAZJJbxNhnaalYY7f7aDEKhT4Yzkw',
       })
     expect(response.status).toBe(201)
   })

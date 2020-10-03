@@ -5,11 +5,16 @@
   "repository": "git@github.com:GustavoFSProg/desafio-api-bossabox.git",
   "author": "Gustavo <gustavosohne38@gmail.com>",
   "license": "MIT",
+  "engines": {
+    "node": "12.16.x"
+  },
   "scripts": {
     "dev": "NODE_ENV=development nodemon --exec babel-node src/index.js",
     "start": "NODE_ENV=production node dist",
     "build": "babel src -d dist",
-    "lint": "eslint --ext .js --ignore-path .gitignore ."
+    "lint": "eslint --ext .js --ignore-path .gitignore .",
+    "test": "jest",
+    "swagger": "node swagger.js"
   },
   "devDependencies": {
     "eslint": "^7.9.0",
@@ -17,17 +22,24 @@
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-prettier": "^3.1.4",
+    "jest": "^26.4.2",
     "prettier": "^2.1.2"
   },
   "dependencies": {
+    "@sendgrid/mail": "^7.2.6",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-node": "^0.0.1-security",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.7.0",
     "cors": "^2.8.5",
+    "crypto": "^1.0.1",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "mongoose": "^5.10.6"
+    "jsonwebtoken": "^8.5.1",
+    "md5": "^2.3.0",
+    "mongoose": "^5.10.6",
+    "supertest": "^5.0.0",
+    "swagger-autogen": "^1.2.5"
   }
 }

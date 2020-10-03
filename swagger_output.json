@@ -81,12 +81,6 @@
         "description": "",
         "parameters": [],
         "responses": {}
-      },
-      "delete": {
-        "tags": [],
-        "description": "",
-        "parameters": [],
-        "responses": {}
       }
     }
   },

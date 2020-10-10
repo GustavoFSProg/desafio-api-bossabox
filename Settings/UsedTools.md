@@ -27,6 +27,6 @@ Mongoose é uma base de dados nosql
 
 É um webtoken usado para fazer a parte de autenticação do usuario
 
-# 8 - Md5:
+# 8 - md5:
 
 Ele cria um hash para cryptografar a senha do usuario

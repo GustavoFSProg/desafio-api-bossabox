@@ -27,6 +27,16 @@ async function create(req, res) {
   }
 }
 
+async function deleteOne(req, res) {
+  try {
+    await usersModel.findOneAndRemove({ id: req.params.id })
+
+    return res.status(200).send({ message: 'One was deleted' })
+  } catch (error) {
+    return res.status(400).send({ message: error })
+  }
+}
+
 async function getAll(req, res) {
   try {
     const data = await usersModel.find()
@@ -56,4 +66,4 @@ async function login(req, res) {
   }
 }
 
-export default { create, getAll, login }
+export default { create, getAll, login, deleteOne }

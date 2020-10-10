@@ -29,7 +29,7 @@ async function create(req, res) {
 
 async function deleteOne(req, res) {
   try {
-    await usersModel.findOneAndRemove({ id: req.params.id })
+    await usersModel.findOneAndRemove(req.params.id)
 
     return res.status(200).send({ message: 'One was deleted' })
   } catch (error) {
